@@ -45,7 +45,7 @@ Member는 Cart기능을 통해 즐겨찾기를 할 수 있고, Orders 기능을 
 <br />
 
 ## 💻STACKS
-
+<div align=center>
 <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=Vue.js&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
@@ -56,7 +56,8 @@ Member는 Cart기능을 통해 즐겨찾기를 할 수 있고, Orders 기능을 
 <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=Amazon%20S3&logoColor=white">
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
-
+   <br>
+</div>
 
 ## 🔍 요구사항 명세서
 
