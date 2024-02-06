@@ -309,21 +309,7 @@
 리뷰 등록
 <hr/>
 <p align="center">
-  <img src="">
-</p>
-<br/>
-
-리뷰 조회
-<hr/>
-<p align="center">
-  <img src="">
-</p>
-<br/>
-
-리뷰 수정
-<hr/>
-<p align="center">
-  <img src="">
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/93915072/1538386d-8f18-4b83-962c-8d59b9f96597">
 </p>
 <br/>
 </details>
