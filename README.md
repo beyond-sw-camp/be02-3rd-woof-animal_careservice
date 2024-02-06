@@ -160,6 +160,7 @@
 
 <details>
 <summary>상품 기능</summary>
+<br/>
 
 업체 등록
 <hr/>
@@ -178,15 +179,14 @@
 업체 조회
 <hr/>
 <p align="center">
-  <img src="[img/product%20read.png](https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148935493/f9d36f71-6bc4-40b2-a74e-70021748b158
-)">
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148935493/164d8970-ee43-43e0-ac34-5cf7c45fa90b">
 </p>
 <br/>
 
 업체 수정
 <hr/>
 <p align="center">
-  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148935493/164d8970-ee43-43e0-ac34-5cf7c45fa90b">
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148935493/d2951578-f364-4313-80e3-8e2c025ef0ee">
 </p>
 <br/>
 
