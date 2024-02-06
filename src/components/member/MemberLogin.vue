@@ -24,7 +24,6 @@
 </template>
   
 <script>
-import { mapStores } from 'pinia'
 import { useMemberStore } from '@/stores/useMemberStore';
 
 export default {
@@ -32,27 +31,30 @@ export default {
     return {
       memberLogin: {
         email: '',
-        password: ''
+        password: '',
       }
     };
   },
-  computed: {
-    ...mapStores(useMemberStore)
-  },
   methods: {
-
     async login() {
-      let result = await this.memberStore.login(this.memberLogin)
-      // 로그인 성공이면 메인 페이지로 이동
+      const memberStore = useMemberStore(); // 스토어 직접 사용
+      const result = await memberStore.login(this.memberLogin);
+      // 로그인 성공이면 메인 페이지로 이동 및 localStorage에 저장
       if (result) {
+        // sessionStorage에서 memberIdx를 읽어와 localStorage에 저장
+        const memberIdx = sessionStorage.getItem('memberIdx');
+        localStorage.setItem('memberIdx', memberIdx);
         
-        window.location.href = "/productCeo/list";
+        // 메인 페이지로 리다이렉트
+        this.$router.push("/productCeo/list");
       } else {
+        // 로그인 실패 시 사용자에게 알림
         alert("로그인 실패");
+        // 로그인 폼 초기화
         this.memberLogin = {
           email: '',
           password: ''
-        }
+        };
       }
     }
   }

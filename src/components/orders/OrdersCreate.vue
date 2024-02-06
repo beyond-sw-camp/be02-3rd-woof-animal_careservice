@@ -1,106 +1,60 @@
 <template>
   <div class="all">
-    <form class="orderform" @submit.prevent>
+    
+    <div class="select">
+      <div class="selectCeo">
+        <router-link to="/productCeo/list" class="ceoButton">업체 선택하기</router-link>
+      
+      <p class="ceo">선택된 CEO: {{ storeName }}</p>
+      </div>
+        
+
+      <div class="selectManager">
+        <router-link to="/productManager/list" class="ceoButton">매니저 선택하기</router-link>
+        <p class="manager">선택된 매니저: {{ managerName }}</p>
+      </div>
+        
+
+      </div>
+    <form class="orderform" @submit.prevent="sendData">
       <div>
         <label for="name">이름</label>
-        <input
-          type="text"
-          id="name"
-          maxlength="30"
-          placeholder="ex.홍길동/포롱"
-          v-model="name"
-        />
+        <input type="text" id="name" maxlength="30" placeholder="ex.홍길동/포롱" v-model="name" />
       </div>
 
       <div>
         <label for="phoneNumber">전화번호</label>
-        <input
-          type="tel"
-          id="phoneNumber"
-          maxlength="11"
-          placeholder="ex.01011112222"
-          v-model="phoneNumber"
-        />
+        <input type="tel" id="phoneNumber" maxlength="11" placeholder="ex.01011112222" v-model="phoneNumber" />
       </div>
+
       <div>
         <label for="time">예약시간</label>
-        <input
-          type="tel"
-          id="time"
-          maxlength="11"
-          placeholder="숫자만 써주세요"
-          v-model="time"
-        />
+        <input type="tel" id="time" maxlength="11" placeholder="숫자만 써주세요" v-model="time" />
       </div>
 
       <div>
         <label for="orderDetails">특이사항</label>
-        <input
-          type="text"
-          id="orderDetails"
-          maxlength="50"
-          placeholder="ex. 입질이 있어요"
-          v-model="orderDetails"
-        />
+        <input type="text" id="orderDetails" maxlength="50" placeholder="ex. 입질이 있어요" v-model="orderDetails" />
       </div>
 
       <div class="service">
         <label for="place">장소</label>
-        <input
-          type="text"
-          id="place"
-          maxlength="50"
-          placeholder="장소"
-          v-model="place"
-        />
-      </div>
-      <div class="course">
-        <label for="course">코스</label>
-        <input
-          type="text"
-          id="course"
-          maxlength="50"
-          placeholder="코스"
-          v-model="course"
-        />
+        <input type="text" id="place" maxlength="50" placeholder="장소" v-model="place" />
       </div>
 
-      <div>
-        <router-link to="/productCeo/list" class="button"
-          >업체 선택하기</router-link
-        >
-      </div>
-      <div>
-        <p>선택된 CEO: {{ storeName }}</p>
-        <!-- 예약 관련 다른 정보와 함께 예약하기 폼을 구성 -->
-      </div>
-      <br /><br /><br />
+      <!-- <div class="productName">
+        <label for="productName">코스</label>
+        <input type="text" id="productName" maxlength="50" placeholder="코스" v-model="productName" />
+      </div> -->
 
-      <div>
-        <router-link to="/productManager/list" class="button"
-          >매니저 선택하기</router-link
-        >
-      </div>
-      <div>
-        <p>선택된 매니저: {{ managerName }}</p>
-        <!-- 예약 관련 다른 정보와 함께 예약하기 폼을 구성 -->
-      </div>
-      <br /><br /><br />
+      <div class="numbers">
+      <p>업체 번호: {{ productCeoIdx }} </p> &nbsp;
+      <p>매니저 번호 :{{ productManagerIdx }} </p>&nbsp;
+      <p>나의 번호: {{ memberIdx }} </p>
+    </div>
 
-      <label>멤버 번호 </label>
-      <input
-        type="text"
-        id="memberIdx"
-        placeholder="숫자만 써주세요"
-        v-model="memberIdx"
-      />
-      <!-- 중략 -->
-      <input
-        class="submit signup-progress-btn"
-        type="submit"
-        value="전송하기"
-        v-on:click="sendData()"
-      />
+
+      <input class="submit signup-progress-btn" type="submit" value="전송하기" />
     </form>
   </div>
 </template>
@@ -116,13 +70,15 @@ export default {
       time: "",
       orderDetails: "",
       place: "",
-      course: "",
-      storeName: this.$route.query.storeName,
-      productCeoIdx: this.$route.query.productCeoIdx,
-      managerName: this.$route.query.managerName,
-      productManagerIdx: this.$route.query.productManagerIdx,
-      memberIdx: "",
+      productName: "",
+      storeName: localStorage.getItem("storeName") || "업체를 선택해주세요",
+      productCeoIdx: localStorage.getItem("productCeoIdx"),
+      managerName: localStorage.getItem("managerName") || "매니저를 선택해주세요",
+      productManagerIdx: localStorage.getItem("productManagerIdx"),
+      memberIdx: localStorage.getItem('memberIdx') || "로그인한 사용자의 idx가 없습니다"
+      // "현재 로그인한 사용자의 ID", // 예시 값, 실제 구현에선 인증 로직에 맞게 설정
     };
+
   },
   methods: {
     async sendData() {
@@ -132,85 +88,73 @@ export default {
         time: this.time,
         orderDetails: this.orderDetails,
         place: this.place,
-        course: this.course,
-        productCeoIdx: this.$route.query.productCeoIdx,
-        productManagerIdx: this.$route.query.productManagerIdx,
+        // productName: this.productName,
+        storeName: this.storeName,
+        productCeoIdx: this.productCeoIdx,
+        productManagerIdx: this.productManagerIdx,
         memberIdx: this.memberIdx,
       };
 
-      let orderDto = JSON.stringify(data);
-
-      console.log(orderDto);
-
       try {
-        let response = await axios.post(
-          "http://localhost:8080/orders/create",
-          orderDto,
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-
-        if (response.data !== null) {
-          this.$router.push("/orders/success");
-        }
-        console.log(response, data);
+        await axios.post("http://www.woofwoof.kro.kr:8080/orders/create", data, {
+          headers: { "Content-Type": "application/json" },
+        });
+        alert("주문이 완료되었습니다.");
+        this.$router.push("/orders/success");
       } catch (error) {
         console.error(error);
+        alert("주문을 실패하였습니다.");
       }
     },
   },
 };
-
-// created() {
-//   this.storeName = this.$route.query.storeName || '기본값';
-//   this.productCeoIdx = this.$route.query.productCeoIdx || '기본값';
-//   this.managerName = this.$route.query.managerName || '기본값';
-//   this.productManagerIdx = this.$route.query.productManagerIdx || '기본값';
-// }
 </script>
-
 <style scoped>
-.ordersBanner {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  /* background-color: tomato; */
-  background-image: url(https://media.istockphoto.com/id/1356431581/ko/%EC%82%AC%EC%A7%84/%EC%95%A0%EC%99%84-%EB%8F%99%EB%AC%BC-%EC%86%8C%EC%9C%A0%EC%9E%90-%EC%9E%AC%EC%83%9D-%EC%99%80-%EA%B7%B8%EB%85%80%EC%9D%98-%EA%B5%AD%EA%B2%BD-%EC%BD%9C%EB%A6%AC-%EC%95%BC%EC%99%B8.jpg?s=2048x2048&w=is&k=20&c=tMPhUV9VW3lNRiuja8YJ_Qi6yJ2MVNVJwiKeWoyGKto=);
-  background-size: cover;
-  background-position: 50% 30%;
+.ceoButton{
+  /* border: 1px solid red; */
+  font-size: 22px;
+  background-color: #faef71;
+  padding: 5px;
 }
-.ordersBanner > img:nth-of-type(1) {
-  position: absolute;
-  left: 0;
-  top: -105px;
+.select{
+  /* border: 1px solid red; */
+    width: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    right: -3%;
+    top: 42px;
+}
+.select>div{
+  margin-bottom: 20px;
+}
+.selectCeo{
+  /* display: flex; */
+  /* border: 1px solid green; */
+  margin-bottom:40px;
+}
+.selectManager{
+  /* display: flex; */
+  /* border: 1px solid green; */
+  margin-bottom:20px;
+}
+.ceo{
+font-size: 20px;
+font-weight: normal;
+margin-top: 10px;
+}
+.manager{
+  font-size: 20px;
+font-weight: normal;
+margin-top: 10px;
 }
 
-.ordersBannerTxt {
+.numbers{
   display: flex;
-  /* align-items: baseline; */
-  /* font-weight: bold; */
-  position: absolute;
-  left: 38%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  flex-direction: column;
-}
-.ordersBannerTxt > h1 {
-  font-size: 94px;
-  font-weight: 400;
-  background-color: #ebebeb6e;
-}
-.ordersBannerTxt > h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 30px;
-  background-color: #ebebeb6e;
-  display: block;
-  width: 349px;
+    padding: 50px;
+    font-size: 20px;
 }
 
 .orderform {
@@ -326,7 +270,7 @@ export default {
 /* .number{
   margin-top: 75px;
 } */
-.course {
+.productName {
   margin-top: 20px;
 }
 </style>

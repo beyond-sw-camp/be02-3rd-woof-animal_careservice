@@ -42,7 +42,7 @@ import axios from 'axios';
 export default {
   data() {
       return {
-          backend: "http://localhost:8080",
+          backend: "http://www.woofwoof.kro.kr:8080",
           managerName: "",
           gender: "",
           phoneNumber: "",

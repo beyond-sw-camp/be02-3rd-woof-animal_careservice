@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import axios from "axios";
 import { toRaw } from "vue";
 
-const backend = "http://localhost:8080";
+const backend = "http://www.woofwoof.kro.kr:8080";
 
 export const useMemberStore = defineStore("member", {
   state: () => ({ isLoading: false, isLoggedIn: false }),
@@ -18,6 +18,8 @@ export const useMemberStore = defineStore("member", {
           sessionStorage.setItem("atoken", response.data.accessToken);
 
           this.isLoggedIn = true;
+          console.log(response.data.idx);
+          sessionStorage.setItem("memberIdx", response.data.idx)
   
           return true;
         }

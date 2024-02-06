@@ -36,7 +36,7 @@
         <div class="innerheaderDown">
             <ul class="gnb">
                 <li>
-                    <a href="/productCeo/list">장소</a>
+                    <a href="/productCeo/list">업체</a>
                 </li>
                 <li>
                     <a href="/productManager/list">매니저</a>

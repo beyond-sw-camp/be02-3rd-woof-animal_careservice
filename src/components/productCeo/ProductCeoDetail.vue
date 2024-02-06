@@ -205,19 +205,24 @@ export default {
   },
   methods: {
     goToReservation() {
-      this.$router.push({
-        path: "/orders/create",
-        query: {
-          storeName: this.product.storeName,
-          productCeoIdx: this.product.id,
-        },
-      });
-    },
+    // 로컬 스토리지에 선택 정보 저장
+    localStorage.setItem('storeName', this.product.storeName);
+    localStorage.setItem('productCeoIdx', this.idx);
+
+    // 예약 페이지로 라우팅, URL 쿼리 파라미터에 선택 정보 포함
+    this.$router.push({
+      path: "/orders/create",
+      query: {
+        storeName: this.product.storeName,
+        productCeoIdx: this.idx,
+      },
+    });
+  },
 
     async loadProductInfo() {
       try {
         const response = await axios.get(
-          `http://localhost:8080/productCeo/${this.idx}`
+          `http://www.woofwoof.kro.kr:8080/productCeo/${this.idx}`
         );
         const data = response.data;
         if (data && data.code === 1000) {
@@ -241,7 +246,7 @@ export default {
     deleteProduct() {
       if (confirm("정말로 이 상품을 삭제하시겠습니까?")) {
         axios
-          .delete(`http://localhost:8080/productCeo/deleteCeo?idx=${this.idx}`)
+          .delete(`http://www.woofwoof.kro.kr:8080/productCeo/deleteCeo?idx=${this.idx}`)
           .then(() => {
             alert("상품이 성공적으로 삭제되었습니다.");
             this.$router.push("/productCeo/list"); // 예를 들어, 상품 목록 페이지로 리디렉션

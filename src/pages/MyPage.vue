@@ -13,9 +13,9 @@
     </div>
     <div id="navigation">
       
-      <button @click="setActiveSection('reservation')">예약 내역</button>
+      <button v-on:click="getData()">예약 내역</button>
       <button @click="setActiveSection('updateProfile')">회원 정보 수정</button>
-    </div>
+        </div>
   </div>
 
   <div v-show="activeSection === 'updateProfile'" id="updateProfileSection">
@@ -78,7 +78,16 @@ export default {
   },
   methods: {
     setActiveSection(section) {
+
       this.activeSection = section;
+    },
+    async getData() {
+      const memberIdx = sessionStorage.getItem("memberIdx");
+      if (memberIdx) {
+        this.$router.push("/orders/mylist?idx=" + memberIdx);
+      } else {
+        alert("로그인 정보가 없습니다.");
+      }
     },
     async submitForm() {
       let data = {
@@ -94,7 +103,7 @@ export default {
 
       try {
         let response = await axios.patch(
-          "http://localhost:8080/member/update",
+          "http://www.woofwoof.kro.kr:8080/member/update",
           memberUpdateReq,
           {
             headers: {
@@ -133,7 +142,7 @@ export default {
 
   // 디코드된 이메일로 사용자 정보 가져오기
   try {
-    const response = await axios.get(`http://localhost:8080/member/${email}`);
+    const response = await axios.get(`http://www.woofwoof.kro.kr:8080/member/${email}`);
     console.log(response.data);
     this.memberList = response.data;
   } catch (error) {
