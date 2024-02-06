@@ -131,47 +131,27 @@
 
 <details>
 <summary>회원 기능</summary>
-<br>
-<br>
-일반 회원 가입
+<br/>
+
+일반 회원 가입 & 로그인
 <br/>
 <hr/>
 <p align="center">
-  <img src="img/public%20signup.png">
-</p>
-<br/>
-일반 회원 로그인
-<hr/>
-<p align="center">
-  <img src="img/public%20login.png">
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/93915072/bf47c430-5fcd-4201-a916-d3f5e5f4216d">
 </p>
 <br/>
 
-매니저 회원 가입
+매니저 회원 가입 & 로그인 
 <hr/>
 <p align="center">
-<img src="img/manager%20signup.png"> 
+<img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/93915072/5ae8ff13-1946-4dc5-826c-289433143e85"> 
 </p>
 <br/>
 
-매니저 로그인
+업체 회원 가입 & 로그인
 <hr/>
 <p align="center">
-<img src="img/manager%20login.png">
-</p>
-<br/>
-
-업체 회원 가입
-<hr/>
-<p align="center">
-<img src="img/Ceo%20signup.png">
-</p>
-<br/>
-
-업체 로그인
-<hr/>
-<p align="center">
-<img src="img/Ceo%20login.png">
+<img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/93915072/fecdd191-c26c-493d-b078-f3d6cf51345c">
 </p>
 <br/>
 </details>
@@ -180,79 +160,78 @@
 
 <details>
 <summary>상품 기능</summary>
-<br>
-<br>
+
 업체 등록
 <hr/>
 <p align="center">
-  <img src="img/ceoCreate.gif">
+  <img src="img/product%20create.png">
 </p>
 <br/>
 
 업체 리스트
 <hr/>
 <p align="center">
-  <img src="img/ceoList.gif">
+  <img src="img/product%20list.png">
 </p>
 <br/>
 
 업체 조회
 <hr/>
 <p align="center">
-  <img src="img/ceoRead.gif">
+  <img src="img/product%20read.png">
 </p>
 <br/>
 
 업체 수정
 <hr/>
 <p align="center">
-  <img src="img/ceoUpdate.gif">
+  <img src="img/product%20modify.png">
 </p>
 <br/>
 
 업체 삭제
 <hr/>
 <p align="center">
-  <img src="img/ceoDelete.gif">
+  <img src="img/product%20delete.png">
 </p>
 <br/>
 
 매니저 등록
 <hr/>
 <p align="center">
-  <img src="img/managerCreate.gif">
+  <img src="">
 </p>
 
 매니저 리스트
 <hr/>
 <p align="center">
-  <img src="img/managerList.gif">
+  <img src="">
 </p>
 
 매니저 조회
 <hr/>
 <p align="center">
-  <img src="img/managerRead.gif">
+  <img src="">
 </p>
 
 
 매니저 수정
 <hr/>
 <p align="center">
-  <img src="img/managerUpdate.gif">
+  <img src="">
 </p>
 
 매니저 삭제
 <hr/>
 <p align="center">
-  <img src="img/managerDelete.gif">
+  <img src="">
 </p>
 </details>
 
 <details>
 <summary>주문 기능</summary>
-<br>
-<br>
+
+
 주문 등록
 <hr/>
 <p align="center">
@@ -292,8 +271,8 @@
 
 <details>
 <summary>마이페이지 기능</summary>
-<br>
-<br>
+<br/>
+
 회원 정보 수정
 <hr/>
 <p align="center">
@@ -325,8 +304,8 @@
 
 <details>
 <summary>리뷰 기능</summary>
-<br>
-<br>
+<br/>
+
 리뷰 등록
 <hr/>
 <p align="center">
@@ -350,22 +329,24 @@
 </details>
 
 <details>
+<summary>결제 기능</summary>
+결제 기능
+
+
+자세한 사진은 Docs/실행결과 폴더 확인해주세요.
+
+</details>
+
+<details>
 <summary>상세 기능</summary>
-<br>
-<br>
+<br/>
+
 About us
 <hr/>
 <p align="center">
   <img src="">
 </p>
 <br/>
-
-</details>
-<details>
-<summary>결제 기능</summary>
-<br>
-<br>
-자세한 사진은 Docs/실행결과 폴더 확인해주세요.
 
 </details>
 
