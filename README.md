@@ -133,45 +133,25 @@
 <summary>회원 기능</summary>
 <br/>
 
-일반 회원 가입
+일반 회원 가입 & 로그인
 <br/>
 <hr/>
 <p align="center">
-  <img src="img/public%20signup.png">
-</p>
-<br/>
-일반 회원 로그인
-<hr/>
-<p align="center">
-  <img src="img/public%20login.png">
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/93915072/bf47c430-5fcd-4201-a916-d3f5e5f4216d">
 </p>
 <br/>
 
-매니저 회원 가입
+매니저 회원 가입 & 로그인 
 <hr/>
 <p align="center">
-<img src="img/manager%20signup.png"> 
+<img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/93915072/5ae8ff13-1946-4dc5-826c-289433143e85"> 
 </p>
 <br/>
 
-매니저 로그인
+업체 회원 가입 & 로그인
 <hr/>
 <p align="center">
-<img src="img/manager%20login.png">
-</p>
-<br/>
-
-업체 회원 가입
-<hr/>
-<p align="center">
-<img src="img/Ceo%20signup.png">
-</p>
-<br/>
-
-업체 로그인
-<hr/>
-<p align="center">
-<img src="img/Ceo%20login.png">
+<img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/93915072/fecdd191-c26c-493d-b078-f3d6cf51345c">
 </p>
 <br/>
 </details>
