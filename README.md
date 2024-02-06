@@ -220,32 +220,32 @@
 매니저 등록
 <hr/>
 <p align="center">
-  <img src="">
+  <img src="img/managerCreate.gif">
 </p>
 
 매니저 리스트
 <hr/>
 <p align="center">
-  <img src="">
+  <img src="img/managerList.gif">
 </p>
 
 매니저 조회
 <hr/>
 <p align="center">
-  <img src="">
+  <img src="img/managerRead.gif">
 </p>
 
 
 매니저 수정
 <hr/>
 <p align="center">
-  <img src="">
+  <img src="img/managerUpdate.gif">
 </p>
 
 매니저 삭제
 <hr/>
 <p align="center">
-  <img src="">
+  <img src="img/managerDelete.gif">
 </p>
 </details>
 
