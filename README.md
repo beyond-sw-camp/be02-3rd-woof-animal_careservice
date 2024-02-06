@@ -236,6 +236,7 @@
 <hr/>
 <p align="center">
   <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/122515113/434fba18-33e4-4e62-b073-55977d53509d">
+	<br>
 	사용자가 업체와 매니저를 선택하고 폼 데이터를 양식에 맞게 입력하면 주문 전송이 완료된다
 </p>
 
@@ -245,7 +246,7 @@
 <hr/>
 <p align="center">
   <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/122515113/7e2ff502-7f41-47fb-aeea-d825f878a8c2">
-  주문 데이터를 보내면 예약내역, 삭제하기, 수정하기 창으로 넘어가게 되고 
+  <br> 주문 데이터를 보내면 예약내역, 삭제하기, 수정하기 창으로 넘어가게 되고 
   내역을 누르면 사용자의 주문 내역이 모두 불러와진다
 
 </p>
@@ -255,7 +256,7 @@
 <hr/>
 <p align="center">
   <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/122515113/ad441577-cd83-4dba-aa34-f2b0fa276316">
-사용자가 주문 수정하기를 누르면 수정 가능한 양식이 나오고 양식에 따라 작성 후 주문 데이터를 전송하면 주문 수정이 이뤄진다
+<br>사용자가 주문 수정하기를 누르면 수정 가능한 양식이 나오고 양식에 따라 작성 후 주문 데이터를 전송하면 주문 수정이 이뤄진다
 </p>
 
 <br/>
@@ -265,7 +266,7 @@
 <hr/>
 <p align="center">
   <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/122515113/8fa4e810-10cf-455d-8d2c-71c7641e6d83">
-	주문 삭제를 누르면 주문 삭제 후 메인 페이지로 이동하게 된다 
+	<br>주문 삭제를 누르면 주문 삭제 후 메인 페이지로 이동하게 된다 
 </p>
 <br/>
 </details>
