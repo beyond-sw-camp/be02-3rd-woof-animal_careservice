@@ -270,6 +270,8 @@
 </p>
 <br/>
 </details>
+
+<details>
 <summary>마이페이지 기능</summary>
 <br/>
 
