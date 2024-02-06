@@ -6,7 +6,7 @@ Woof </h1>
 
 
 <div align="center">
-<img src="main.png" width="600" height="600"/>
+<img src="img/main.png" width="600" height="600"/>
 </div>
 
 
@@ -40,7 +40,7 @@ Member는 Cart기능을 통해 즐겨찾기를 할 수 있고, Orders 기능을 
 ```
 
 ## 프로젝트 설계
-<img src="SystemArchitecture.png" width="800" height="600"/>
+<img src="img/SystemArchitecture.png" width="800" height="600"/>
 
 <br />
 
@@ -123,41 +123,41 @@ Member는 Cart기능을 통해 즐겨찾기를 할 수 있고, Orders 기능을 
 <br/>
 <hr/>
 <p align="center">
-  <img src="public signup.png">
+  <img src="img/public%20signup.png">
 </p>
 <br/>
 일반 회원 로그인
 <hr/>
 <p align="center">
-  <img src="public login.png">
+  <img src="img/public%20login.png">
 </p>
 <br/>
 
 매니저 회원 가입
 <hr/>
 <p align="center">
-<img src="manager signup.png"> 
+<img src="img/manager%20signup.png"> 
 </p>
 <br/>
 
 매니저 로그인
 <hr/>
 <p align="center">
-<img src="manager login.png">
+<img src="img/manager%20login.png">
 </p>
 <br/>
 
 업체 회원 가입
 <hr/>
 <p align="center">
-<img src="Ceo signup.png">
+<img src="img/Ceo%20signup.png">
 </p>
 <br/>
 
 업체 로그인
 <hr/>
 <p align="center">
-<img src="Ceo login.png">
+<img src="img/Ceo%20login.png">
 </p>
 <br/>
 </details>
@@ -170,35 +170,35 @@ Member는 Cart기능을 통해 즐겨찾기를 할 수 있고, Orders 기능을 
 업체 등록
 <hr/>
 <p align="center">
-  <img src="product create.png">
+  <img src="img/product%20create.png">
 </p>
 <br/>
 
 업체 리스트
 <hr/>
 <p align="center">
-  <img src="product list.png">
+  <img src="img/product%20list.png">
 </p>
 <br/>
 
 업체 조회
 <hr/>
 <p align="center">
-  <img src="product read.png">
+  <img src="img/product%20read.png">
 </p>
 <br/>
 
 업체 수정
 <hr/>
 <p align="center">
-  <img src="product modify.png">
+  <img src="img/product%20modify.png">
 </p>
 <br/>
 
 업체 삭제
 <hr/>
 <p align="center">
-  <img src="product delete.png">
+  <img src="img/product%20delete.png">
 </p>
 <br/>
 
