@@ -275,8 +275,7 @@
 회원 정보 수정
 <hr/>
 <p align="center">
-  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148943354/c336ce0c-acd0-4f46-8897-84f50392407d
-  ">
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148943354/c336ce0c-acd0-4f46-8897-84f50392407d">
 </p>
 <br/>
 
@@ -306,19 +305,6 @@
 
 
 자세한 사진은 Docs/실행결과 폴더 확인해주세요.
-
-</details>
-
-<details>
-<summary>상세 기능</summary>
-<br/>
-
-About us
-<hr/>
-<p align="center">
-  <img src="">
-</p>
-<br/>
 
 </details>
 
