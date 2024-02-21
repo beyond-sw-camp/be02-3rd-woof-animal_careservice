@@ -14,10 +14,10 @@
                 </a>
                 <ul class="topMenu">
                     <li v-show="!isLoggedIn">
-                        <a href="/signup/member">Sign up</a>
+                        <a href="/signup/member">회원가입</a>
                     </li>
                     <li v-show="!isLoggedIn">
-                        <a href="/login/member">Login</a>
+                        <a href="/login/member">로그인</a>
                     </li>
                     <li v-show="isLoggedIn">
                         <a @click="logout()">로그아웃</a>
