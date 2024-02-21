@@ -14,7 +14,7 @@
                 </a>
                 <ul class="topMenu">
                     <li v-show="!isLoggedIn">
-                        <a href="/signup/member">Sign up2</a>
+                        <a href="/signup/member">Sign up</a>
                     </li>
                     <li v-show="!isLoggedIn">
                         <a href="/login/member">Login</a>
