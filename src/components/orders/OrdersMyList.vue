@@ -40,7 +40,7 @@ export default {
         }
 
         try {
-            const response = await axios.get(`http://www.woofwoof.kro.kr:8080/orders/${memberIdx}`);
+            const response = await axios.get(`http://www.woofwoof.kro.kr/api/orders/${memberIdx}`);
             console.log(response.data);
             this.orders = response.data;
             

@@ -112,6 +112,11 @@
    ->리뷰를 작성하면 해당 상품의 idx 및 정보들을 불러와 해당 상품의 리뷰인 것을 확인 후 권한 부여
 3. 업체는 고객의 리뷰 번호와 리뷰 내용을 확인할 수 있습니다.
    ->사용자에게 리뷰를 받으면 해당 상품과 리뷰 내용을 업체는 열람할 수 있습니다.
+
+[6] 마이페이지
+1. 사용자는 마이페이지에서 자신의 정보(닉네임, 이메일)를 확인할 수    있습니다.
+2. 사용자는 회원 정보(닉네임, 비밀번호)를 수정할 수 있습니다.
+3. 사용자는 마이페이지를 통해 자신의 예약내역을 확인할 수 있는 페이지로 이동할 수 있습니다.
 </details>
 
 
@@ -270,29 +275,15 @@
 회원 정보 수정
 <hr/>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148943354/c336ce0c-acd0-4f46-8897-84f50392407d">
 </p>
 <br/>
 
 예약 내역
 <hr/>
 <p align="center">
-  <img src="">
-</p>
-<br/>
-
-즐겨찾기 목록
-<hr/>
-<p align="center">
-  <img src="">
-</p>
-<br/>
-
-리뷰 관리
-<hr/>
-<p align="center">
-  <img src="">
-</p>
+  <img src="https://github.com/beyond-sw-camp/be02-3rd-woof-animal_careservice/assets/148943354/271c6a52-b4dc-4384-849f-5f85ac797c60">
+  </p>
 <br/>
 </details>
 
@@ -314,19 +305,6 @@
 
 
 자세한 사진은 Docs/실행결과 폴더 확인해주세요.
-
-</details>
-
-<details>
-<summary>상세 기능</summary>
-<br/>
-
-About us
-<hr/>
-<p align="center">
-  <img src="">
-</p>
-<br/>
 
 </details>
 

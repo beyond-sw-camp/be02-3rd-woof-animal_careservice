@@ -81,7 +81,7 @@ export default {
     loadProductInfo() {
       const idx = this.$route.query.idx || this.$route.params.idx; // 쿼리 파라미터 또는 라우트 파라미터에서 idx를 가져옵니다.
       axios
-        .get(`http://www.woofwoof.kro.kr:8080/productCeo/${idx}`)
+        .get(`http://www.woofwoof.kro.kr/api/productCeo/${idx}`)
         .then((response) => {
           if (response.data.code === 1000) {
             this.productInfo = { idx, ...response.data.result };
@@ -91,7 +91,7 @@ export default {
     },
     updateProduct() {
       axios
-        .patch(`http://www.woofwoof.kro.kr:8080/productCeo/updateCeo`, this.productInfo)
+        .patch(`http://www.woofwoof.kro.kr/api/productCeo/updateCeo`, this.productInfo)
         .then(() => {
           alert("상품이 성공적으로 수정되었습니다.");
           this.$router.push(

@@ -57,7 +57,7 @@ export default {
 
       console.log(ordersUpdateReq);
 
-      try {let response = await axios.patch("http://www.woofwoof.kro.kr:8080/orders/update", data, {
+      try {let response = await axios.patch("http://www.woofwoof.kro.kr/api/orders/update", data, {
   headers: {
     'Content-Type': 'application/json'
   }

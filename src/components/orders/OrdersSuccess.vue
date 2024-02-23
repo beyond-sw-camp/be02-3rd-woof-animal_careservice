@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       idx: "",
-      backend: "http://www.woofwoof.kro.kr:8080", // 백엔드 서버 주소
+      backend: "http://www.woofwoof.kro.kr/api", // 백엔드 서버 주소
     };
   },
   methods: {
